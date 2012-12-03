@@ -1,7 +1,7 @@
 
 cSound
 ======
-
+![cSound](https://raw.github.com/cyounes/csound/master/csound.png) 
 Simple command line tool to control sound on linux for alsa devices
 
 ## Installation:
