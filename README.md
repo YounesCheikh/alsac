@@ -2,7 +2,7 @@
 cSound
 ======
 
-Simple command line to control sound on linux for alsa devices
+Simple command line tool to control sound on linux for alsa devices
 
 ## Installation:
 

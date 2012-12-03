@@ -14,7 +14,7 @@ does_csound_exist() {
 
 does_csound_exist
 
-START_DIR=pwd
+START_DIR=`pwd`
 
 echo "*** Cloning repository into ~/csound ..."
 git clone git://github.com/cyounes/csound.git ~/csound;
