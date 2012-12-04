@@ -13,10 +13,10 @@ VERSION=1.0
 
 print_usage() {
   print_about
-  echo "Usage : " 
-  echo "$0 [-|+] [value]"
-  echo "$0 [value] "
-  echo "$0 [mute | unmute]" 
+  echo "Usage : 
+${0##*/} [-|+] [value]
+${0##*/} [value]
+${0##*/} [mute | unmute]" 
   echo "------------------------------------------------------------"
   print_examples
 
@@ -24,12 +24,12 @@ print_usage() {
 
 print_examples() {
   echo 
-  echo "Examples: "
-  echo "$0 - 10 \t\t -- decrease sound of 10% "
-  echo "$0 + 18 \t\t -- increase sound of 18% "
-  echo "$0 45 \t\t -- set sound to 45% "
-  echo "$0 mute \t\t -- mute sound "
-  echo "$0 unmute \t -- unmute sound "
+  echo "Examples:
+${0##*/} - 10 \t- decrease sound of 10%
+${0##*/} + 18 \t- increase sound of 18%
+${0##*/} 45 \t- set sound to 45%
+${0##*/} mute \t- mute sound
+${0##*/} unmute  \t- unmute sound "
 }
 
 print_about() {
