@@ -1,33 +1,33 @@
 
-cSound
+alsac
 ======
-![cSound](https://raw.github.com/cyounes/csound/master/csound.png) 
+![alsac](https://raw.github.com/cyounes/csound/master/csound.png) 
 Simple command line tool to control sound on linux for alsa devices
 
 ## Installation:
 
 ```
-curl https://raw.github.com/cyounes/csound/master/quickinstall.sh | sh 
+curl https://raw.github.com/cyounes/alsac/master/quickinstall.sh | sh 
 ```
 
 ## Usage: 
 ```
-$ csound [-|+] [value]
+$ alsac [-|+] [value]
 ```
 ```
-$ csound [value] 
+$ alsac [value] 
 ```
 ```
-$ csound [mute | unmute]
+$ alsac [mute | unmute]
 ```
 
 ## Examples:
 Examples: 
-+ `csound - 10`  : decrease sound of 10% 
-+ `csound + 18 ` : increase sound of 18% 
-+ `csound 45`    : set sound to 45% 
-+ `csound mute`  : mute sound 
-+ `csound unmute`: unmute sound
++ `alsac - 10`  : decrease sound of 10% 
++ `alsac + 18 ` : increase sound of 18% 
++ `alsac 45`    : set sound to 45% 
++ `alsac mute`  : mute sound 
++ `alsac unmute`: unmute sound
 
 ## License: 
 See license.txt
