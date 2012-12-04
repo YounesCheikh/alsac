@@ -1,7 +1,7 @@
 
 alsac
 ======
-![alsac](https://raw.github.com/cyounes/csound/master/csound.png) 
+![alsac](https://raw.github.com/cyounes/alsac/master/alsac.png) 
 Simple command line tool to control sound on linux for alsa devices
 
 ## Installation:
