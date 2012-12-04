@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This work is licensed under the Creative Commons 
 # Attribution-NonCommercial-ShareAlike 3.0 France License. 
@@ -8,6 +8,15 @@
 # Suite 900, Mountain View, California, 94041, USA.
 # Author: Cheikh Younes <younes.cheikh@gmail.com> http://cyounes.com
 
+
+# Required program(s)
+req_progs=(amixer)
+
+for p in ${req_progs[@]}; do
+  hash "$p" 2>&- || \
+    { echo >&2 " Required program \"$p\" not installed.
+      be sure that your sound device is alsa"; exit 1; }
+done
 
 VERSION=1.0
 
