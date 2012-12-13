@@ -53,6 +53,11 @@ print_version() {
   echo $VERSION
 }
 
+print_volume() {
+  CURRENT=`amixer -D pulse get Master | awk END'{ print $5 }'` 
+  echo "Volume: $CURRENT" 
+}
+
 if [ $# -eq 1 ]
 then
   case $1 in
@@ -80,7 +85,7 @@ then
     amixer -D pulse set Master $2%$1 unmute
   fi
 else
-  print_usage
+  print_volume
 fi
 
 # End of File
